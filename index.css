@@ -1,0 +1,81 @@
+#logo{
+    height: 79px;
+    width: 88px;
+    
+}
+#header{
+    background-color: rgb(223, 221, 218);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    border: 1px dotted black;
+}
+
+#otherElem>ul{
+    list-style: none;
+    display: flex;
+    /* flex-direction: row-reverse; */
+
+    
+ }
+#otherElem>ul>li{
+    padding: 25px;
+}
+#otherElem>ul>a{
+    padding: 25px;
+    padding-right: 50px;
+}
+/* .otherElemMargin{ 
+    display: flex;
+    /* padding: 3px; */
+    /* font-size: large; */
+    
+/* } */
+/* #cart{
+    text-decoration: none;
+    color: black;
+} */
+#cardImg{
+    height: 150px;
+    width: 250px;
+}
+.restaurant{
+  border: 2px solid black;
+    width:250px;
+    height: auto;
+    padding:10px;
+    margin: 10px;
+   
+    
+    
+}
+#restaurantCards{
+    display: flex;
+    flex-wrap: wrap;
+    /* object-fit: contain; */
+    
+}
+.restrauntDetails{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   position: relative;
+   vertical-align:text-bottom;
+   
+    
+}
+/* #ratings{
+    display: inline-block;
+} */
+#timing{
+    display: inline-block;
+    position: relative;
+    left: 150px;
+}
+.containContent{
+    contain: content;
+    text-overflow: ellipsis;
+}
+#cuisines{
+    margin: none;
+}

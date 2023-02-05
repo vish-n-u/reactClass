@@ -1,0 +1,33 @@
+React.Fragment , 
+Jsx Elements can have only one parent element ,but if we want multiple 
+parents in the same Jsx Element we use a parent div element which can have multiple parents inside it,
+but this creates a parent div element on top of  the other parent Elements , if we do not want this unnecassary
+parent element we use React.Fragment
+
+
+eg
+const Header1 =()=> {return<h1>Hello</h1>}
+const Header2 =()=>{return<h1>World</h1>}
+const jsxElem = return (<Header1/> , <Header2/>) //invalid jsx because multiple parents
+
+const validJsxElem = return(<div><Header1/> , <Header2/></div>) valid jsx , but unwanted parent element
+
+const validJsxUsingFragment = return(<React.Fragment><Header1/> , <Header2/></React.Fragement>)// valid jsx and does not have a parent 
+element on top because it acts as an empty tag
+
+const validJsxUsingFragmentShortHand =return(<><Header1/> , <Header2/></>)
+same as validJsxUsingFragment but using shorthand Tags (<></>)
+
+
+//
+//Virtual Dom class:- 4 , 2:20:00 timing
+A representation of our DOM tree with us in our code is known as Virtual DOM
+config driven UI
+
+
+// Never create a functional component within another functional component
+// Never creata u useState variables inside an if...else...
+
+client side routing server side routing
+
+according to route all children will go in outlet
